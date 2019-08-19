@@ -1,0 +1,3 @@
+Start QEMU with 'C:\Program Files\GNS3\qemu-2.4.0\qemu-system-x86_64w.exe' -name c1_e1_core1-1 -m 256M -smp cpus=1 -boot order=c -drive 'file=C:\Users\Sir-M\Desktop\AdministracionDeServiciosEnRed\Ejercicio1.1\project-files\qemu\497c189a-cac8-4cd2-848c-95b02674d81e\hda_disk.qcow2,if=ide,index=0,media=disk' -uuid 497c189a-cac8-4cd2-848c-95b02674d81e -serial telnet:127.0.0.1:5004,server,nowait -monitor tcp:127.0.0.1:51143,server,nowait -net none -device e1000,mac=0c:15:66:d8:1e:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -nographic
+
+Execution log:

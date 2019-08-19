@@ -1,0 +1,19 @@
+SAVE ROUTER CONFIG:
+
+copy running-config startup-config
+
+
+PC EN QEMU:
+
+sudo su
+vi /opt/bootlocal.sh
+
+//Agregamos las lineas nuevas percistentes
+
+sudo ifconfig eth0 10.0.0.10 netmask 255.0.0.0 up
+sudo route add ip default gw 10.0.0.1
+sudo route add default gw 10.0.0.1
+
+Esc. Return
+:wq
+filetool.sh -b
